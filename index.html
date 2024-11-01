@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunger Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Full-screen Carousel */
+    .carousel-item {
+      height: 100vh;
+      min-height: 400px;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Overlay Effect */
+    .carousel-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Text Styling */
+    .carousel-caption {
+      color: #fff;
+      text-align: center;
+    }
+    .carousel-caption h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .carousel-caption p {
+      font-size: 1.25rem;
+    }
+    .btn-primary {
+      background-color: #ff6347;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Full-Screen Background Carousel -->
+  <div id="backgroundCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url('/img/img1.jpg');">
+        <div class="carousel-overlay">
+          <div class="carousel-caption">
+            <h1>Welcome to Hunger Home</h1>
+            <p>Delicious meals delivered right to your door</p>
+            <a href="/about.html" class="btn btn-primary">About Us</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('/img/img2.jpg');">
+        <div class="carousel-overlay">
+          <div class="carousel-caption">
+            <h1>Authentic Cuisine, Unforgettable Taste</h1>
+            <p>Explore a wide variety of dishes from different cuisines</p>
+            <a href="/services.html" class="btn btn-primary">Our Services</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('/img/img3.jpg');">
+        <div class="carousel-overlay">
+          <div class="carousel-caption">
+            <h1>Freshly Delivered, Every Time</h1>
+            <p>Experience fast and convenient food delivery</p>
+            <a href="/products.html" class="btn btn-primary">See Our Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#backgroundCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#backgroundCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
